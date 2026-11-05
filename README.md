@@ -39,3 +39,9 @@ Tests cover area unions against an independent square-foot occupancy calculation
 Overlapping footprints count only once. Calculations use the 50 × 90 ft dimensions; the 16-marla label uses 281.25 sq ft per marla.
 
 Layouts save in localStorage on the current browser and do not sync between devices. Hosting-specific Site identity is excluded from this repository. This is a concept zoning tool; setbacks, access, and structural design require separate review.
+
+## GitHub Pages deployment
+
+The `.github/workflows/pages.yml` workflow runs the tests and deploys `dist/` on pushes to `main`. It can also be started manually from the Actions tab. GitHub Pages must be enabled with **GitHub Actions** as the publishing source.
+
+GitHub Pages is a public deployment. Your saved layout edits remain local to your browser.
